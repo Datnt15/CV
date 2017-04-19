@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Nguyễn Tiến Đạt - Hồ sơ</title>
+    <meta name="description" content="3 styles with inline editable feature" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="css/jquery-ui.custom.min.css" />
+    <link rel="stylesheet" href="css/jquery.gritter.min.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="css/daterangepicker.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-editable.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-colorpicker.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-multiselect.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cv.css">
+    <!-- text fonts -->
+    <link rel="stylesheet" href="css/fonts.googleapis.com.css" />
+    <!-- ace styles -->
+    <link rel="stylesheet" href="css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+    <!--[if lte IE 9]>
+            <link rel="stylesheet" href="css/ace-part2.min.css" class="ace-main-stylesheet" />
+        <![endif]-->
+    <link rel="stylesheet" href="css/ace-skins.min.css" />
+    <link rel="stylesheet" href="css/ace-rtl.min.css" />
+    <!--[if lte IE 9]>
+          <link rel="stylesheet" href="css/ace-ie.min.css" />
+        <![endif]-->
+    <!-- inline styles related to this page -->
+    <!-- ace settings handler -->
+    <script src="js/ace-extra.min.js"></script>
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="no-skin">
+    <div class="main-container ace-save-state" id="main-container">
+        <div class="main-content">
+            <div class="page-content">
+                <!-- /.page-header -->
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="vspace-12-sm"></div>
+                    <div class="space"></div>
+                    <!-- user-cv -->
+                    <div id="main_container" class="row">
+                        <!-- HEADER -->
+                        <div id="header_cv">
+                            <!-- LOGOTYPE/NAME -->
+                            <div class="header_logotype_container col-md-4 col-xs-12 col-sm-4">
+                                <h1 id="fullname">
+                            Nguyễn Tiến Đạt                        </h1>
+                                <h2 class="logotype_occupation" id="cv_major">Fullstack Web Developer!</h2>
+                            </div>
+                            <!-- MAIN MENU -->
+                            <div class="header_menu_container col-sm-8 col-xs-12">
+                                <div class="clear"></div>
+                                <ul class="header_menu horizontal_list">
+                                    <li><span class="no_border" href="#Profile">Hồ sơ</span></li>
+                                    <li><span href="#Education">Học bạ / Chứng chỉ</span></li>
+                                    <li><span href="#Skills">Kỹ năng và kinh nghiệm</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- LEFT COL -->
+                        <div id="left_col" class="col-md-4 col-xs-12 col-sm-4">
+                            <div class="profile_frame">
+                                <div class="profile_picture" style="background-image: url(img/user_default.jpg);"></div>
+                            </div>
+                            <div class="hello_content">
+                                <h2>Xin chào!</h2>
+                                <p id="cv_short_intro"><span style="font-size: 15px;">Đây là một vài dòng ngắn gọn về bản thân của tôi, xin hết !</span></p>
+                            </div>
+                            <div class="contact_details_content">
+                                <h2>Thông tin liên hệ: </h2>
+                                <h4>Số điện thoại:</h4>
+                                <p id="phone_1">(098) 454-8476</p>
+                                <div class="vspace-12-sm"></div>
+                                <div class="space"></div>
+                                <p id="phone_2">(0166) 2727-846</p>
+                                <h4>Email:</h4>
+                                <p id="cv_email">tiendatbt19@gmail.com</p>
+                                <h4>Adress:</h4>
+                                <p id="cv_address">1 Bạch Mai, Hà Nội, Việt Nam</p>
+                            </div>
+                            <a href="mailto:tiendatbt19@gmail.com" class="send_message_button">
+                                <span class="cut1"></span>
+                                <span class="cut2"></span>
+                                <span class="content">Email cho tôi<span class="fontawesome-double-angle-right"></span></span>
+                            </a>
+                            <div class="get_social_content">
+                                <h2>Mạng xã hội</h2>
+                                <ul class="social_icons horizontal_list">
+                                    <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
+                                    <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
+                                    <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- PROFILE CONTENT -->
+                        <div id="content_container" class="col-sm-8 col-xs-12">
+                            <!-- Profile -->
+                            <div id="Profile" class="cv_content">
+                                <div class="block">
+                                    <h1>Triết lý sống</h1>
+                                    <blockquote class="profile_quote">
+                                        <p id="cv_quote">
+                                            ""Là đàn ông con trai mình không sợ khó, mình không sợ khổ, nhưng mình sợ nhất là khô. Ghét cái cảm giác khô, mất nước kinh khủng luôn í các bạn ợ!""
+                                        </p>
+                                        <span class="entypo-quote"></span>
+                                    </blockquote>
+                                </div>
+                                <div class="horizontal_line">
+                                    <div class="line_left"></div>
+                                    <div class="left_circle"></div>
+                                    <div class="central_circle"></div>
+                                    <div class="right_circle"></div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <div class="block">
+                                    <h2>Tính cách</h2>
+                                    <div class="philosophy_content">
+                                        <p id="philosophy_intro">
+                                            I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points 123: </p>
+                                        <ul id="philosophies">
+                                            <li class="single_philosophy">
+                                                Pragmatic <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                            </li>
+                                            <li class="single_philosophy">
+                                                Honest <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                            </li>
+                                            <li class="single_philosophy">
+                                                Open-minded <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                            </li>
+                                            <li class="single_philosophy">
+                                                Coherent <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                            </li>
+                                            <li class="single_philosophy">
+                                                Respectful <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                            </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <div class="space"></div>
+                                        <button class="btn btn-info" id="add_new_philosophy">Thêm tính cách mới</button>
+                                    </div>
+                                </div>
+                                <div class="horizontal_line">
+                                    <div class="line_left"></div>
+                                    <div class="left_circle"></div>
+                                    <div class="central_circle"></div>
+                                    <div class="right_circle"></div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <div class="last block">
+                                    <h2>Sở thích</h2>
+                                    <p id="hobbies_intro">"Là đàn ông con trai mình không sợ khó, mình không sợ khổ, nhưng mình sợ nhất là khô. Ghét cái cảm giác khô, mất nước kinh khủng luôn í các bạn ợ!"</p>
+                                    <ul id="hobbies">
+                                        <li class="single_hobbie">
+                                            Having new experiences <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                        <li class="single_hobbie">
+                                            Hiking and Biking <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                        <li class="single_hobbie">
+                                            Meeting people <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                        <li class="single_hobbie">
+                                            Manga and Anime <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                        <li class="single_hobbie">
+                                            Web Developing <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                        <li class="single_hobbie">
+                                            Visiting new places <span class="badge badge-important hide " style="cursor: pointer;">x</span>
+                                        </li>
+                                    </ul>
+                                    <span id="add_new_hobbie">Thêm sở thích mới nào!</span>
+                                </div>
+                            </div>
+                            <!-- /Profile -->
+                            <!-- Education -->
+                            <div id="Education" class="cv_content hide">
+                                <div class="block">
+                                    <h2>Quá trình học tập</h2>
+                                    <div class="timeline-container">
+                                        <div class="timeline-items">
+                                            <div class="timeline-item clearfix">
+                                                <div class="timeline-info">
+                                                    <i class="timeline-indicator ace-icon fa fa-graduation-cap btn btn-primary no-hover green"></i>
+                                                </div>
+                                                <div class="widget-box transparent">
+                                                    <div class="widget-header widget-header-small">
+                                                        <h5 class="widget-title smaller">04-04-2017</h5>
+                                                        <span class="widget-toolbar">
+                                                            <a data-school="04-04-2017_Đại học Bách Khoa Hà Nội">
+                                                                <i class="ace-icon fa fa-times"></i>
+                                                            </a>     
+                                                        </span>
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <div class="widget-main">
+                                                            Đại học Bách Khoa Hà Nội </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.timeline-items -->
+                                        <div class="timeline-items">
+                                            <div class="timeline-item clearfix">
+                                                <div class="timeline-info">
+                                                    <i class="timeline-indicator ace-icon fa fa-graduation-cap btn btn-primary no-hover green"></i>
+                                                </div>
+                                                <div class="widget-box transparent">
+                                                    <div class="widget-header widget-header-small">
+                                                        <h5 class="widget-title smaller">26-04-2017</h5>
+                                                        <span class="widget-toolbar">
+                                                            <a data-school="26-04-2017_Đại học Bách Khoa Hà Nội">
+                                                                <i class="ace-icon fa fa-times"></i>
+                                                            </a>     
+                                                        </span>
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <div class="widget-main">
+                                                            Đại học Bách Khoa Hà Nội </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.timeline-items -->
+                                        <div class="timeline-items">
+                                            <div class="timeline-item clearfix">
+                                                <div class="timeline-info">
+                                                    <i class="timeline-indicator ace-icon fa fa-graduation-cap btn btn-primary no-hover green"></i>
+                                                </div>
+                                                <div class="widget-box transparent">
+                                                    <div class="widget-header widget-header-small">
+                                                        <h5 class="widget-title smaller">25-04-2017</h5>
+                                                        <span class="widget-toolbar">
+                                                            <a data-school="25-04-2017_Đại học Bách Khoa Hà Nội">
+                                                                <i class="ace-icon fa fa-times"></i>
+                                                            </a>     
+                                                        </span>
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <div class="widget-main">
+                                                            Đại học Bách Khoa Hà Nội </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.timeline-items -->
+                                    </div>
+                                    <!-- /.timeline-container -->
+                                    <button class="btn btn-info btn-sm" type="button" data-text-default="Thêm học bạ" data-toggle="collapse" data-target="#add_school_profile" aria-expanded="false" aria-controls="add_school_profile">Thêm học bạ</button>
+                                    <div class="collapse" id="add_school_profile">
+                                        <div class="clear"></div>
+                                        <div class="space"></div>
+                                        <form action="" id="add_school_profile_form" class="form-inline">
+                                            <input type="text" class="grid3" name="school_name" placeholder="Đại học bách khoa hà nội" required>
+                                            <input class="date-picker grid3" name="school_date" type="text" placeholder="15-05-2017" required>
+                                            <button class="btn btn-info btn-sm" type="submit">Thêm</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="horizontal_line">
+                                    <div class="line_left"></div>
+                                    <div class="left_circle"></div>
+                                    <div class="central_circle"></div>
+                                    <div class="right_circle"></div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <div class="block">
+                                    <h2>Chứng chỉ</h2>
+                                    <div class="row" id="diplomaes">
+                                        <div class="col-xs-6 col-sm-4 col-md-3">
+                                            <div class="thumbnail search-thumbnail">
+                                                <span class="search-promotion label label-danger arrowed-in arrowed-in-right" data-diploma="CSS">Xóa chứng chỉ</span>
+                                                <img class="media-object" src="img/diploma_2.png" />
+                                                <div class="caption">
+                                                    <div class="clearfix">
+                                                        <p>
+                                                            CSS </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3">
+                                            <div class="thumbnail search-thumbnail">
+                                                <span class="search-promotion label label-danger arrowed-in arrowed-in-right" data-diploma="JavaScript">Xóa chứng chỉ</span>
+                                                <img class="media-object" src="img/diploma_2.png" />
+                                                <div class="caption">
+                                                    <div class="clearfix">
+                                                        <p>
+                                                            JavaScript </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3">
+                                            <div class="thumbnail search-thumbnail">
+                                                <span class="search-promotion label label-danger arrowed-in arrowed-in-right" data-diploma="PHP">Xóa chứng chỉ</span>
+                                                <img class="media-object" src="img/diploma_2.png" />
+                                                <div class="caption">
+                                                    <div class="clearfix">
+                                                        <p>
+                                                            PHP </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3">
+                                            <div class="thumbnail search-thumbnail">
+                                                <span class="search-promotion label label-danger arrowed-in arrowed-in-right" data-diploma="HTMl">Xóa chứng chỉ</span>
+                                                <img class="media-object" src="img/diploma_2.png" />
+                                                <div class="caption">
+                                                    <div class="clearfix">
+                                                        <p>
+                                                            HTMl </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+                                        <span id="add_new_diploma">Thêm chứng chỉ mới!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Education -->
+                            <!-- Skills -->
+                            <div id="Skills" class="cv_content hide">
+                                <div class="block">
+                                    <h2>Kỹ năng</h2>
+                                    <div class="clearfix" id="list_skills">
+                                        <div class="grid4 center">
+                                            <div class="easy-pie-chart percentage" data-percent="39" data-color="#a47ae2">
+                                                <span class="percent">39</span>%
+                                            </div>
+                                            <div class="space-2"></div>
+                                            Graphic Design </div>
+                                        <div class="grid4 center">
+                                            <div class="easy-pie-chart percentage" data-percent="84" data-color="#ffad46">
+                                                <span class="percent">84</span>%
+                                            </div>
+                                            <div class="space-2"></div>
+                                            HTML5 & CSS3 </div>
+                                        <div class="grid4 center">
+                                            <div class="easy-pie-chart percentage" data-percent="79" data-color="#ac725e">
+                                                <span class="percent">79</span>%
+                                            </div>
+                                            <div class="space-2"></div>
+                                            Javascript/jQuery </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="space"></div>
+                                        <button class="btn btn-info btn-sm" type="button" data-text-default="Thêm kỹ năng" data-toggle="collapse" data-target="#add_new_skill" aria-expanded="false" aria-controls="add_new_skill">Thêm kỹ năng</button>
+                                        <div class="collapse col-xs-12" id="add_new_skill">
+                                            <div class="clear"></div>
+                                            <div class="space"></div>
+                                            <form action="" id="add_new_skill_form" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="skill_name">Chọn kỹ năng(*)</label>
+                                                    <input type="text" name="skill_name" id="skill_name" placeholder="" class="form-control" required>
+                                                </div>
+                                                <div class="form-group" id="slider-eq">
+                                                    <label for="percent">Mức độ thành thạo(*)</label>
+                                                    <input type="hidden" name="percent" id="percent" required>
+                                                    <span class="ui-slider-green ui-slider-small"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="simple-colorpicker-1">Chọn màu hiển thị</label>
+                                                    <select id="simple-colorpicker-1" name="display_color" class="hide">
+                                                        <option value="#ac725e">#ac725e</option>
+                                                        <option value="#d06b64">#d06b64</option>
+                                                        <option value="#f83a22">#f83a22</option>
+                                                        <option value="#fa573c">#fa573c</option>
+                                                        <option value="#ff7537">#ff7537</option>
+                                                        <option value="#ffad46" selected="">#ffad46</option>
+                                                        <option value="#42d692">#42d692</option>
+                                                        <option value="#16a765">#16a765</option>
+                                                        <option value="#7bd148">#7bd148</option>
+                                                        <option value="#b3dc6c">#b3dc6c</option>
+                                                        <option value="#fbe983">#fbe983</option>
+                                                        <option value="#fad165">#fad165</option>
+                                                        <option value="#92e1c0">#92e1c0</option>
+                                                        <option value="#9fe1e7">#9fe1e7</option>
+                                                        <option value="#9fc6e7">#9fc6e7</option>
+                                                        <option value="#4986e7">#4986e7</option>
+                                                        <option value="#9a9cff">#9a9cff</option>
+                                                        <option value="#b99aff">#b99aff</option>
+                                                        <option value="#c2c2c2">#c2c2c2</option>
+                                                        <option value="#cabdbf">#cabdbf</option>
+                                                        <option value="#cca6ac">#cca6ac</option>
+                                                        <option value="#f691b2">#f691b2</option>
+                                                        <option value="#cd74e6">#cd74e6</option>
+                                                        <option value="#a47ae2">#a47ae2</option>
+                                                        <option value="#555">#555</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-info btn-sm" type="submit">
+                                                        Thêm
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="horizontal_line">
+                                    <div class="line_left"></div>
+                                    <div class="left_circle"></div>
+                                    <div class="central_circle"></div>
+                                    <div class="right_circle"></div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <div class="block" id="expers">
+                                    <h2>Kinh nghiệm làm việc</h2>
+                                    <div class="timeline-container">
+                                        <div class="timeline-items">
+                                            <div class="timeline-item clearfix">
+                                                <div class="timeline-info">
+                                                    <i class="timeline-indicator ace-icon fa fa-bar-chart btn no-hover green"></i>
+                                                </div>
+                                                <div class="widget-box transparent">
+                                                    <div class="widget-header widget-header-small">
+                                                        <h5 class="widget-title smaller">10-03-2016 => 10-04-2017</h5>
+                                                        <span class="widget-toolbar">
+                                                        <a data-exper="10-03-2016 => 10-04-2017_Ascimet Company">
+                                                            <i class="ace-icon fa fa-times"></i>
+                                                        </a>     
+                                                    </span>
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <div class="widget-main">
+                                                            Ascimet Company </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.timeline-items -->
+                                    </div>
+                                    <!-- /.timeline-container -->
+                                    <div class="clearfix">
+                                        <div class="space"></div>
+                                        <button class="btn btn-info btn-sm" type="button" data-text-default="Thêm kinh nghiệm" data-toggle="collapse" data-target="#add_new_exper" aria-expanded="false" aria-controls="add_new_exper">Thêm kinh nghiệm</button>
+                                        <div class="collapse col-xs-12" id="add_new_exper">
+                                            <div class="clear"></div>
+                                            <div class="space"></div>
+                                            <form action="" class="form-horizontal" id="add_new_exper_form">
+                                                <div class="form-group">
+                                                    <label for="id-date-range-picker-1">
+                                                        Chọn khoảng thời gian
+                                                    </label>
+                                                    <input class="form-control date-range-picker" type="text" name="time-period" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="company">
+                                                        Tên công ty/cơ sở làm việc
+                                                    </label>
+                                                    <input type="text" name="company" id="company" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary" type="submit">Thêm</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Skills -->
+                        </div>
+                    </div>
+                    <!-- /.user-cv -->
+                    <!-- PAGE CONTENT ENDS -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.page-content -->
+        </div>
+    </div>
+    <!-- /.main-container -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--[if IE]>
+<script src="js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+    <script type="text/javascript">
+    if ('ontouchstart' in document.documentElement) document.write("<script src='js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <!--[if lte IE 8]>
+  <script src="js/excanvas.min.js"></script>
+<![endif]-->
+    <script src="js/jquery-ui.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.gritter.min.js"></script>
+    <script src="js/bootbox.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.hotkeys.index.min.js"></script>
+    <script src="js/bootstrap-wysiwyg.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/spinbox.min.js"></script>
+    <script src="js/bootstrap-editable.min.js"></script>
+    <script src="js/ace-editable.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery-typeahead.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.min.js"></script>
+    <script src="js/bootstrap-multiselect.min.js"></script>
+    <!-- ace scripts -->
+    <script src="js/ace-elements.min.js"></script>
+    <script src="js/ace.min.js"></script>
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+    jQuery(function($) {
+        //editables on first profile page
+        $.fn.editable.defaults.mode = 'inline';
+        $.fn.editableform.loading = "<div class='editableform-loading'><i class='ace-icon fa fa-spinner fa-spin fa-2x light-blue'></i></div>";
+        $.fn.editableform.buttons = '<button type="submit" class="btn btn-info editable-submit"><i class="ace-icon fa fa-check"></i></button>' +
+            '<button type="button" class="btn editable-cancel"><i class="ace-icon fa fa-times"></i></button>';
+
+        //editables 
+
+
+
+        $('a[ data-original-title]').tooltip();
+
+
+
+        ///////////////////////////////////////////
+        $('#user-profile')
+            .find('input[type=file]').ace_file_input({
+                style: 'well',
+                btn_choose: 'Thay đổi ảnh',
+                btn_change: null,
+                // no_icon:'ace-icon fa fa-picture-o',
+                thumbnail: 'large',
+                droppable: true,
+                allowExt: ['jpg', 'jpeg', 'png', 'gif'],
+                allowMime: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']
+            })
+            .end().find('button[type=reset]').on(ace.click_event, function() {
+                $('#user-profile input[type=file]').ace_file_input('reset_input');
+            })
+            .end().find('.date-picker').datepicker().next().on(ace.click_event, function() {
+                $(this).prev().focus();
+            })
+        $('.input-mask-phone').mask('(999) 999-9999');
+        $('#form-field-phone-2').mask('(9999) 9999-999');
+        $(".ace-file-container").css({
+            backgroundImage: 'url(' + $('#avatar').attr('src') + ')',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            backgroundPosition: 'center'
+        });
+        $("#sidebar > ul > li > a").each(function() {
+            if ($(this).attr('href') == "student")
+                $(this).parent('li').addClass('active');
+        });
+        $('.multiselect').multiselect({
+            enableFiltering: true,
+            enableHTML: true,
+            nonSelectedText: "Chưa chọn gì cả",
+            buttonClass: 'btn btn-white btn-primary',
+            templates: {
+                button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> &nbsp;<b class="fa fa-caret-down"></b></button>',
+                ul: '<ul class="multiselect-container dropdown-menu"></ul>',
+                filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
+                filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
+                li: '<li><a tabindex="0"><label></label></a></li>',
+                divider: '<li class="multiselect-item divider"></li>',
+                liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
+            }
+        });
+
+    });
+    </script>
+    <script src="js/cv.js"></script>
+</body>
+
+</html>
