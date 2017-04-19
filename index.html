@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- page specific plugin styles -->
     <link rel="stylesheet" href="css/jquery-ui.custom.min.css" />
-    <link rel="stylesheet" href="css/jquery.gritter.min.css" />
-    <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.min.css" />
     <link rel="stylesheet" href="css/bootstrap-editable.min.css" />
@@ -491,29 +489,25 @@
     <!-- /.main-container -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <!--[if IE]>
-<script src="js/jquery-1.11.3.min.js"></script>
-<![endif]-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
     <script type="text/javascript">
     if ('ontouchstart' in document.documentElement) document.write("<script src='js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
     </script>
     <script src="js/bootstrap.min.js"></script>
     <!-- page specific plugin scripts -->
     <!--[if lte IE 8]>
-  <script src="js/excanvas.min.js"></script>
-<![endif]-->
+    <script src="js/excanvas.min.js"></script>
+    <![endif]-->
     <script src="js/jquery-ui.custom.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/jquery.gritter.min.js"></script>
-    <script src="js/bootbox.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/jquery.hotkeys.index.min.js"></script>
     <script src="js/bootstrap-wysiwyg.min.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="js/spinbox.min.js"></script>
     <script src="js/bootstrap-editable.min.js"></script>
     <script src="js/ace-editable.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery-typeahead.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.min.js"></script>
@@ -522,70 +516,6 @@
     <script src="js/ace-elements.min.js"></script>
     <script src="js/ace.min.js"></script>
     <!-- inline scripts related to this page -->
-    <script type="text/javascript">
-    jQuery(function($) {
-        //editables on first profile page
-        $.fn.editable.defaults.mode = 'inline';
-        $.fn.editableform.loading = "<div class='editableform-loading'><i class='ace-icon fa fa-spinner fa-spin fa-2x light-blue'></i></div>";
-        $.fn.editableform.buttons = '<button type="submit" class="btn btn-info editable-submit"><i class="ace-icon fa fa-check"></i></button>' +
-            '<button type="button" class="btn editable-cancel"><i class="ace-icon fa fa-times"></i></button>';
-
-        //editables 
-
-
-
-        $('a[ data-original-title]').tooltip();
-
-
-
-        ///////////////////////////////////////////
-        $('#user-profile')
-            .find('input[type=file]').ace_file_input({
-                style: 'well',
-                btn_choose: 'Thay đổi ảnh',
-                btn_change: null,
-                // no_icon:'ace-icon fa fa-picture-o',
-                thumbnail: 'large',
-                droppable: true,
-                allowExt: ['jpg', 'jpeg', 'png', 'gif'],
-                allowMime: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']
-            })
-            .end().find('button[type=reset]').on(ace.click_event, function() {
-                $('#user-profile input[type=file]').ace_file_input('reset_input');
-            })
-            .end().find('.date-picker').datepicker().next().on(ace.click_event, function() {
-                $(this).prev().focus();
-            })
-        $('.input-mask-phone').mask('(999) 999-9999');
-        $('#form-field-phone-2').mask('(9999) 9999-999');
-        $(".ace-file-container").css({
-            backgroundImage: 'url(' + $('#avatar').attr('src') + ')',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center'
-        });
-        $("#sidebar > ul > li > a").each(function() {
-            if ($(this).attr('href') == "student")
-                $(this).parent('li').addClass('active');
-        });
-        $('.multiselect').multiselect({
-            enableFiltering: true,
-            enableHTML: true,
-            nonSelectedText: "Chưa chọn gì cả",
-            buttonClass: 'btn btn-white btn-primary',
-            templates: {
-                button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> &nbsp;<b class="fa fa-caret-down"></b></button>',
-                ul: '<ul class="multiselect-container dropdown-menu"></ul>',
-                filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
-                filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
-                li: '<li><a tabindex="0"><label></label></a></li>',
-                divider: '<li class="multiselect-item divider"></li>',
-                liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
-            }
-        });
-
-    });
-    </script>
     <script src="js/cv.js"></script>
 </body>
 
